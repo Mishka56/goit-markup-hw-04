@@ -48,6 +48,12 @@ img {
 
 header {
 	border-bottom: 1px solid #e7e9fc;
+	box-shadow:
+		0 1px 6px 0 rgba(46, 47, 66, 0.08),
+		0 1px 1px 0 rgba(46, 47, 66, 0.16),
+		0 2px 1px 0 rgba(46, 47, 66, 0.08);
+	background: #fff;
+	transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-container {
 	display: flex;
@@ -161,6 +167,7 @@ address {
 }
 
 .general-section {
+	max-width: 1440px;
 	background-color: #2e2f42;
 	padding: 188px 0;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -323,7 +330,8 @@ address {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icons-link:hover {
+.icons-link:hover,
+.icons-link:focus {
 	background-color: #404bbf;
 }
 
@@ -494,7 +502,8 @@ address {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.media-footer-link:hover {
+.media-footer-link:hover,
+.media-footer-link:focus {
 	background-color: #31d0aa;
 }
 
